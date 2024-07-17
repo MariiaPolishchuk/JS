@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1 id="h1" class="h1">Add Employee</h1>
+            <div id="content"></div>
+
+            <form class="form" id="employeeForm">
+                <input class="input" type="text" id="firstName" placeholder="First Name" required>
+                <input class="input" type="text" id="lastName" placeholder="Last Name" required>
+                <input class="input" type="number" id="age" placeholder="Age" required>
+                <input class="input" type="text" id="inn" placeholder="INN" required>
+                <input class="input" type="number" id="number" placeholder="Number" required>
+                <input class="input" type="text" id="snils" placeholder="SNILS" required>
+                <select class="select" id="type" required>
+                    <option value="Employee">Employee</option>
+                    <option value="Dev">Developer</option>
+                </select>
+                <input class="input" type="text" id="level" placeholder="Level (for Devs)">
+                <button class="button" type="submit">Add Employee</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="workers-container">
+        <h1 class="h1 workers-header">Workers List</h1>
+        <div class="lists">
+            <div class="emps">
+                <h2 class="h2">Employees:</h2>
+                <ul class="workers-list" id="employeeList"></ul>
+            </div>
+            <div class="devs">
+                <h2 class="h2">Developers:</h2>
+                <ul class="workers-list" id="devList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
